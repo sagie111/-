@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200&display=swap');
+
+
+body {
+    
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.center {
+    
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -210px;
+    width: 500px;
+    height: 100px;
+}
+
+button {
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: orange;
+    border: 3px solid black;
+    box-shadow: 0 17px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+button:hover {
+    transition: .2s ease-in;
+    transform: translateY(-5px)  
+}
+
+
+h1 {
+    font-family: 'Lobster', cursive;
+
+    font-size: 40px;
+}
+h2 {
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}

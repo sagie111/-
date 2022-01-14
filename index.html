@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       
+        <title>Lollipop-Note🍭</title>
+      
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="Title">
+            <h1>Lollipop-Note🍭</h1>
+            <h2>Save a note - FOREVER AND EVER!</h2>
+        </div>
+        
+        <div class="Center">
+            
+        <input placeholder="Write a note..." class="storage" type="text">
+
+        <button class="button">Save</button>
+
+        </div>
+ 
+        <div class="dad">
+            <div class="TheBox">
+                <p class="text"></p>
+            </div>
+        </div>
+
+
+        <div class="buttom">
+            <button onclick="https://lollipop-note.netlify.app/about">About</button>
+        </div>
+
+        <div class="buttom-center">
+            <h2>All rights reserved © 2021 - 2022  |  By Sagie Dvir</h2>
+        </div>
+
+
+      
+        <script>
+
+            const storageInput = document.querySelector('.storage')
+            const button = document.querySelector('.button')
+            const text = document.querySelector('.text')
+            const storedInput = localStorage.getItem('textinput')
+            let x = "";
+
+            if (storageInput) {
+                text.textContent = storedInput;
+            }
+
+            storageInput.addEventListener('input', letter => {
+                x = letter.target.value;
+            })
+
+
+            const saveToLocalStorage = () => {
+                localStorage.setItem('textinput', x);
+                window.location.reload();
+                
+            }
+        
+
+            button.addEventListener('click', saveToLocalStorage)
+
+
+        </script>
+    </body>
+</html>
